@@ -1,81 +1,136 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Контакты и форма обратной связи.">
-  <title>Stanislav 3D — Контакты</title>
-  <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-  <a class="skip-link" href="#main">Перейти к содержимому</a>
-  <header class="site-header">
-    <a class="logo" href="index.html">S<span>3D</span></a>
-    <button class="menu-toggle" aria-controls="mainNav" aria-label="Открыть меню" aria-expanded="false">☰</button>
-    <nav id="mainNav" class="main-nav" aria-label="Основная навигация">
-      <a href="index.html">Главная</a>
-      <a href="portfolio.html">Портфолио</a>
-      <a class="active" aria-current="page" href="contacts.html">Контакты</a>
-    </nav>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Контакты и форма обратной связи." />
+    <title>Stanislav 3D — Контакты</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Перейти к содержимому</a>
+    <header class="site-header">
+      <a class="logo" href="index.html">S<span>3D</span></a>
+      <button
+        class="menu-toggle"
+        aria-controls="mainNav"
+        aria-label="Открыть меню"
+        aria-expanded="false"
+      >
+        ☰
+      </button>
+      <nav id="mainNav" class="main-nav" aria-label="Основная навигация">
+        <a href="index.html">Главная</a>
+        <a href="portfolio.html">Портфолио</a>
+        <a class="active" aria-current="page" href="contacts.html">Контакты</a>
+      </nav>
+    </header>
 
-  <main id="main">
-    <section class="page-hero">
-      <p class="eyebrow">CONTACT</p>
-      <h1>Давайте обсудим проект</h1>
-      <p>Обсудим 3D-модель, фирменный стиль или презентацию бренда.</p>
-    </section>
+    <main id="main">
+      <section class="page-hero">
+        <p class="eyebrow">КОНТАКТЫ</p>
+        <h1>Расскажите о задаче</h1>
+        <p>Что нужно сделать: модель предмета, логотип или фирменный стиль?</p>
+      </section>
 
-    <section class="section contact-section">
-      <div class="contact-details">
-        <p class="eyebrow">GET IN TOUCH</p>
-        <h2>Есть идея?</h2>
-        <p>Опишите задачу, и мы определим подходящий формат работы для 3D или Branding-проекта.</p>
-        <div class="contact-list">
-          <div><span>Специализация</span><strong>3D-моделирование и брендинг</strong></div>
-          <div><span>Формат работы</span><strong>Удалённо</strong></div>
-          <div><span>Начало работы</span><strong>С описания вашей идеи</strong></div>
+      <section class="section contact-section">
+        <div class="contact-details">
+          <p class="eyebrow">О ПРОЕКТЕ</p>
+          <h2>С чего начать</h2>
+          <p>
+            Укажите, для чего нужна работа, какой результат вы хотите получить и
+            к какому сроку. Если есть примеры, добавьте ссылки в сообщение.
+          </p>
+          <div class="contact-list">
+            <div>
+              <span>Специализация</span
+              ><strong>3D-моделирование и брендинг</strong>
+            </div>
+            <div><span>Формат работы</span><strong>Удалённо</strong></div>
+          </div>
         </div>
-      </div>
 
-      <form aria-describedby="formNote" id="contactForm" class="contact-form" novalidate>
-        <p id="formNote" class="form-note">Подготовьте заявку и скачайте её текст. Отправка из формы пока не подключена.</p>
-        <div class="form-row">
-          <label for="name">Имя</label>
-          <input id="name" required aria-describedby="nameError" name="name" autocomplete="name" minlength="2" maxlength="80" type="text" placeholder="Ваше имя">
-          <small class="error" id="nameError"></small>
-        </div>
-        <div class="form-row">
-          <label for="email">Email</label>
-          <input id="email" required aria-describedby="emailError" name="email" autocomplete="email" maxlength="254" type="email" placeholder="you@example.com">
-          <small class="error" id="emailError"></small>
-        </div>
-        <div class="form-row">
-          <label for="subject">Тема</label>
-          <select id="subject" required aria-describedby="subjectError" name="subject">
-            <option value="">Выберите тему</option>
-            <option value="3d">3D-моделирование</option>
-            <option value="branding">Branding и фирменный стиль</option>
-          </select>
-          <small class="error" id="subjectError"></small>
-        </div>
-        <div class="form-row">
-          <label for="message">Сообщение</label>
-          <textarea id="message" required aria-describedby="messageError" name="message" minlength="10" maxlength="3000" rows="6" placeholder="Расскажите о проекте..."></textarea>
-          <small class="error" id="messageError"></small>
-        </div>
-        <button class="btn btn-primary form-submit" type="submit">Скачать заявку ↗</button>
-        <p id="formStatus" class="form-status" role="status"></p>
-      </form>
-    </section>
-  </main>
+        <form
+          aria-describedby="formNote"
+          id="contactForm"
+          class="contact-form"
+          novalidate
+        >
+          <p id="formNote" class="form-note">
+            Форма сохранит заявку в текстовый файл. На почту она ничего не
+            отправляет.
+          </p>
+          <div class="form-row">
+            <label for="name">Имя</label>
+            <input
+              id="name"
+              required
+              aria-describedby="nameError"
+              name="name"
+              autocomplete="name"
+              minlength="2"
+              maxlength="80"
+              type="text"
+              placeholder="Ваше имя"
+            />
+            <small class="error" id="nameError"></small>
+          </div>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input
+              id="email"
+              required
+              aria-describedby="emailError"
+              name="email"
+              autocomplete="email"
+              maxlength="254"
+              type="email"
+              placeholder="you@example.com"
+            />
+            <small class="error" id="emailError"></small>
+          </div>
+          <div class="form-row">
+            <label for="subject">Тема</label>
+            <select
+              id="subject"
+              required
+              aria-describedby="subjectError"
+              name="subject"
+            >
+              <option value="">Выберите тему</option>
+              <option value="3d">3D-моделирование</option>
+              <option value="branding">Брендинг и фирменный стиль</option>
+            </select>
+            <small class="error" id="subjectError"></small>
+          </div>
+          <div class="form-row">
+            <label for="message">Сообщение</label>
+            <textarea
+              id="message"
+              required
+              aria-describedby="messageError"
+              name="message"
+              minlength="10"
+              maxlength="3000"
+              rows="6"
+              placeholder="Расскажите о проекте..."
+            ></textarea>
+            <small class="error" id="messageError"></small>
+          </div>
+          <button class="btn btn-primary form-submit" type="submit">
+            Скачать заявку ↗
+          </button>
+          <p id="formStatus" class="form-status" role="status"></p>
+        </form>
+      </section>
+    </main>
 
-  <footer class="site-footer">
-    <span>© 2026 Stanislav 3D</span>
-    <a href="contacts.html">Обсудить проект ↗</a>
-  </footer>
-  <script src="js/main.js"></script>
-  <script src="js/form.js"></script>
-</body>
+    <footer class="site-footer">
+      <span>© 2026 Stanislav 3D</span>
+      <a href="contacts.html">Обсудить проект ↗</a>
+    </footer>
+    <script src="js/main.js"></script>
+    <script src="js/form.js"></script>
+  </body>
 </html>
