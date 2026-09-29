@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Портфолио 3D дизайнера.">
+  <title>Stanislav 3D — Портфолио</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+  <header class="site-header">
+    <a class="logo" href="index.html">S<span>3D</span></a>
+    <button class="menu-toggle" aria-controls="mainNav" aria-label="Открыть меню" aria-expanded="false">☰</button>
+    <nav id="mainNav" class="main-nav" aria-label="Основная навигация">
+      <a href="index.html">Главная</a>
+      <a class="active" aria-current="page" href="portfolio.html">Портфолио</a>
+      <a href="contacts.html">Контакты</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <p class="eyebrow">PORTFOLIO</p>
+      <h1>Мои проекты</h1>
+      <p>Подборка работ по 3D-моделированию и брендингу.</p>
+    </section>
+
+    <section class="section">
+      <div class="filters" aria-label="Фильтр проектов">
+        <button class="filter-btn active" data-filter="all">Все</button>
+        <button class="filter-btn" data-filter="3d">3D</button>
+        <button class="filter-btn" data-filter="branding">Branding</button>
+      </div>
+
+      <p id="filterStatus" class="results-count" role="status">Показано проектов: 2</p>
+      <div id="projectGrid" class="project-grid">
+        <article class="project-card" data-category="3d">
+          <a href="#viewer" class="project-visual visual-3d"><img src="images/gun.png" alt="Рендер 3D-модели оружия" loading="lazy"><span>Смотреть в 3D ↗</span></a>
+          <div class="project-info"><span>3D MODELING</span><h2>Hard Surface</h2><p>Low-poly модель с подготовкой для интерактивной сцены.</p></div>
+        </article>
+        <article class="project-card" data-category="branding"><a href="#branding"><div class="project-visual"><img src="branding/1.png" alt="Айдентика Coon Clean" loading="lazy"></div><div class="project-info"><span>BRAND IDENTITY</span><h2>Coon Clean</h2><p>Фирменный стиль: от логотипа до рекламных носителей.</p></div></a></article>
+      </div>
+
+      <div class="render-gallery filterable-project" data-category="3d">
+        <div class="section-heading gallery-heading">
+          <div>
+            <p class="eyebrow">MODEL RENDERS</p>
+            <h2>Ракурсы модели</h2>
+          </div>
+          <p class="section-note">Серия рендеров одной hard-surface модели с разных ракурсов.</p>
+        </div>
+        <div class="render-grid">
+          <figure class="render-item render-item-wide">
+            <img src="images/gun1.png" alt="Вид сбоку на 3D-модель оружия" loading="lazy">
+          </figure>
+          <figure class="render-item">
+            <img src="images/gun2.png" alt="Вид сзади на 3D-модель оружия" loading="lazy">
+          </figure>
+          <figure class="render-item">
+            <img src="images/gun3.png" alt="Вид сверху на 3D-модель оружия" loading="lazy">
+          </figure>
+          <figure class="render-item">
+            <img src="images/gun4.png" alt="Перспективный вид 3D-модели оружия" loading="lazy">
+          </figure>
+        </div>
+      </div>
+
+      <div id="branding" class="branding-gallery filterable-project" data-category="branding">
+        <div class="section-heading gallery-heading">
+          <div>
+            <p class="eyebrow">BRAND IDENTITY / COON CLEAN</p>
+            <h2>Презентация брендинга</h2>
+          </div>
+          <p class="section-note">Логотип, фирменные цвета, паттерны и примеры применения айдентики.</p>
+        </div>
+        <div class="branding-grid">
+          <figure class="branding-item branding-item-featured"><img src="branding/1.png" alt="Логотип Coon Clean и фирменный паттерн" loading="lazy"></figure>
+          <figure class="branding-item"><img src="branding/2.png" alt="Описание бренда Coon Clean и фирменная палитра" loading="lazy"></figure>
+          <figure class="branding-item"><img src="branding/3.png" alt="Фирменные паттерны Coon Clean" loading="lazy"></figure>
+          <figure class="branding-item"><img src="branding/4.png" alt="Рекламный макет Coon Clean на фасаде здания" loading="lazy"></figure>
+          <figure class="branding-item"><img src="branding/5.png" alt="Фирменная одежда Coon Clean" loading="lazy"></figure>
+          <figure class="branding-item"><img src="branding/6.png" alt="Макеты визитных карточек Coon Clean" loading="lazy"></figure>
+          <figure class="branding-item"><img src="branding/7.png" alt="Варианты логотипа Coon Clean на светлом и темном фоне" loading="lazy"></figure>
+          <figure class="branding-item"><img src="branding/8.png" alt="Примеры рекламных публикаций Coon Clean" loading="lazy"></figure>
+          <figure class="branding-item"><img src="branding/9.png" alt="Фирменные элементы и паттерны Coon Clean" loading="lazy"></figure>
+          <figure class="branding-item"><img src="branding/10.png" alt="Финальный слайд презентации Coon Clean" loading="lazy"></figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="viewer" class="section three-section filterable-project" data-category="3d">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">INTERACTIVE MODEL</p>
+          <h2>3D-визуализация</h2>
+        </div>
+        <p class="section-note">Перетаскивай мышью для вращения. Колесо — масштаб.</p>
+      </div>
+
+      <div class="three-layout">
+        <div id="threeContainer" class="three-container">
+          <div class="three-loading" role="status">Загрузка 3D-сцены...</div>
+        </div>
+        <aside class="three-info">
+          <span class="feature-icon">MODEL EXPLORER / 01</span>
+          <h3>Интерактивный объект</h3>
+          <p>Рассмотрите авторскую hard-surface модель со всех сторон. Перетаскивайте объект, чтобы вращать, и используйте колесо или жест двумя пальцами для масштаба.</p><div class="viewer-controls"><button id="rotateModel" class="btn btn-secondary" aria-pressed="false" disabled>Автовращение</button><button id="wireframeModel" class="btn btn-secondary" aria-pressed="false" disabled>Показать сетку</button><button id="resetModel" class="btn btn-secondary" disabled>Сбросить вид</button><label for="modelColor">Цвет поверхности</label><input id="modelColor" type="color" value="#a4abb5" disabled></div><p id="modelStatus" class="model-status" role="status">Загрузка модели…</p>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>© 2026 Stanislav 3D</span>
+    <a href="contacts.html">Обсудить проект ↗</a>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/portfolio.js"></script>
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "./vendor/three/build/three.module.js",
+        "three/addons/": "./vendor/three/examples/jsm/"
+      }
+    }
+  </script>
+  <script type="module">import("./js/three.js").catch(() => { document.querySelector(".three-loading").textContent = "Не удалось запустить 3D. Откройте сайт через локальный сервер. Рендеры доступны выше."; });</script>
+</body>
+</html>

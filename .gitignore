@@ -1,0 +1,9 @@
+.vscode/
+node_modules/
+*.tgz
+.env
+.env.*
+!\.env.example
+.DS_Store
+Thumbs.db
+preview*.png
